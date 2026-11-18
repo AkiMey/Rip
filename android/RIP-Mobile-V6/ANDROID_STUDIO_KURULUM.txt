@@ -1,0 +1,42 @@
+RIP MOBILE V6.2.1 - HOME HUB REMOTE
+
+BU GUNCELLEME SADECE TELEFON UYGULAMASI ICINDIR.
+Laptopta kurulu RIP HUB Lite v0.1 uyumludur; laptopu yeniden kurman gerekmez.
+PC tarafinda da bu ozellik icin yeni kurulum gerekmez.
+
+KURULUM
+1) Android Studio > Open
+2) Bu klasoru sec:
+   RIP-Mobile-V6
+3) Gradle JDK = JDK 21 / Embedded JDK 21
+   NOT: Gradle 8.9 ile JVM 25 kullanma.
+4) Sync bitince telefonu USB Debugging ile bagla.
+5) Telefonu cihaz olarak sec > Run.
+
+Mevcut RIP Mobile'in ustune guncelleme olarak kur.
+Uygulamayi once silme; boylece mevcut PC eslestirmen ve izinlerin korunur.
+
+VersionCode: 620
+VersionName: 6.2.1
+ApplicationId: com.ripperinio.mobile
+
+HOME HUB'U TELEFONA BIR KEZ BAGLAMA
+1) RIP Mobile'i ac.
+2) RIP HOME HUB bolumune in.
+3) Laptop kurulumunda verilen su adresin tamamini yapistir:
+   http://100.76.127.47:8787/wake?token=SENIN_TOKENIN
+   Istersen sadece tokeni de yapistirabilirsin; laptop adresi varsayilan olarak
+   http://100.76.127.47:8787 kayitlidir.
+4) HUB'I KAYDET'e bas.
+5) HUB TEST'e bas. "Telefon -> laptop HUB baglantisi tamam" gelmeli.
+
+SONRA
+- PC AC: Telefon disarida olsa bile Tailscale -> laptop -> WoL ile PC'yi acar.
+- PC KAPAT: PC acikken RIP bridge/Tailscale uzerinden kapatma komutu yollar.
+- PC DURUMU: Laptopun PC'ye ping sonucunu gosterir.
+- YENIDEN BASLAT / KILITLE / UYKU: PC bridge uzerinden calisir.
+
+Guvenlik:
+- HUB tokenini kimseyle paylasma.
+- Token kaynak koduna gomulu degildir; telefonda uygulamanin ozel ayarlarinda saklanir.
+- Laptop HUB yalnizca Tailscale adresinde dinler.

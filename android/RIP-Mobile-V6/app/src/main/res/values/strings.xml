@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RIP Mobile</string>
+    <string name="accessibility_desc">RIP ile eşleştirilmiş kendi bilgisayarınızdan geri, ana ekran, son uygulamalar ve sistem paneli gibi telefon kontrollerini kullanmak için.</string>
+</resources>

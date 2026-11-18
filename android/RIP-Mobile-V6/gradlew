@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+ROOT="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+VERSION=8.9
+CACHE="$HOME/.gradle/rip-mobile-bootstrap/gradle-$VERSION"
+GRADLE="$CACHE/bin/gradle"
+if [ ! -x "$GRADLE" ]; then
+  ZIP="${TMPDIR:-/tmp}/rip-gradle-$VERSION.zip"
+  mkdir -p "$HOME/.gradle/rip-mobile-bootstrap"
+  if command -v curl >/dev/null 2>&1; then
+    curl -L "https://services.gradle.org/distributions/gradle-$VERSION-bin.zip" -o "$ZIP"
+  else
+    wget -O "$ZIP" "https://services.gradle.org/distributions/gradle-$VERSION-bin.zip"
+  fi
+  unzip -q -o "$ZIP" -d "$HOME/.gradle/rip-mobile-bootstrap"
+fi
+exec "$GRADLE" -p "$ROOT" "$@"

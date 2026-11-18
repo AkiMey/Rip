@@ -1,0 +1,27 @@
+RIPPERINIO V6.2.1c - REFERENCE HUD + PHONE COMPLETE
+
+TABAN: V6.2.1 AUTOSTART HOME HUB.
+GITHUB SELF-UPDATE / OTOMATIK SURUM CEKME YOKTUR.
+
+HUD:
+- Kullanici tarafindan verilen RIPPERINIO V7 HYBRID referans ekran yerlesimi kodla yeniden olusturuldu.
+- Ust bar, sol navigasyon, sistem durum karti, hizli islemler, son komutlar, merkez R orb,
+  telefon baglantisi, medya ve indirme/drop bolumleri tek ana ekranda.
+- Gorsel bir screenshot arka plan olarak kullanilmaz; arayuz Tkinter/canvas ile kodlanir.
+
+TELEFON OZELLIKLERI KORUNDU:
+- Tam Phone Control Center (GENEL/UYGULAMALAR/DOSYALAR/BILDIRIMLER/KONTROL/CIHAZ/EKRAN/PANO/BAGLANTI/IZINLER)
+- Telefon bridge + canli baglanti durumu
+- Drop Zone ve telefona dosya gonderme
+- Zil caldir / telefonu bul
+- Konumu bul + haritada ac
+- Telefon ekran goruntusu/canli ekran kontrolleri
+- Uygulama, dosya, bildirim, pano ve cihaz kontrolleri
+- Sol kenar Phone Drawer
+
+KURULUM:
+Bu paket EK PAKET olarak mevcut temiz V6.2.1 klasorunun ustune yazilir.
+RIP kapaliyken uygula, sonra BASLAT.bat ile ac.
+
+GITHUB:
+Kodlar v6-reference-hud-no-autoupdate dalinda tutulur. Main release/self-update akisi bu dal icin calismaz.

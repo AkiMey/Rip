@@ -1,0 +1,21 @@
+RIPPERINIO V6.2.1d — HUD TEXT + SECONDARY WINDOW CHROME
+
+Bu ek paket V6.2.1c üstüne uygulanır.
+
+DÜZELTİLENLER
+- Ana HUD merkezindeki RIPPERINIO yazısında çift/üst üste binen RIP metni kaldırıldı.
+- RIPPERINIO kelimesi ölçülerek tek satırda iki renkli çiziliyor; DPI ölçeğinde kayma yapmıyor.
+- AI ASSISTANT alt yazısı temizlendi.
+- Gün adı tamamen Türkçe gösteriliyor.
+- Telefon bağlantı kartında 75 saniyelik agresif timeout 180 saniyeye çıkarıldı; sağlıklı bridge kısa uyku aralarında kırmızı Offline'a düşmüyor.
+- Offline metni Çevrimdışı olarak Türkçeleştirildi.
+
+HUD UYUMLU AÇILAN PENCERELER
+- V6 Control Center artık standart beyaz Windows başlığı kullanmıyor.
+- Phone Control Center artık standart beyaz Windows başlığı kullanmıyor.
+- İki pencere de RIPPERINIO HUD ile aynı koyu/cyan özel title bar, pencere kontrolleri, sürükleme, büyütme, küçültme, resize grip, cyan çizgiler, kartlar ve sekme teması kullanıyor.
+- Mevcut V6 araçları, Phone Center sekmeleri ve backend özellikleri kaldırılmadı.
+
+GÜNCELLEME
+- GitHub otomatik update / release polling / otomatik ZIP indirme eklenmedi.
+- GitHub yalnızca kaynak kodu ve commit geçmişi için kullanılır.

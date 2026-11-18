@@ -1,0 +1,16 @@
+RIPPERINIO V6.2.1e — SECONDARY WINDOWS + SETTINGS FIX
+
+- Phone Control Center blank-window crash fixed:
+  * platform-unsafe resize cursor no longer aborts HudWindowShell
+  * invalid tuple padding in status labels fixed
+  * ttk notebook style no longer uses unsupported tabmargins
+- V6 Control Center gets the same notebook compatibility fix.
+- Drop Zone action window now uses RIPPERINIO dark/cyan custom chrome; stock white
+  Windows title bar and plain layout are removed.
+- Legacy left-edge PhoneEdgeDrawer is disabled. Full Phone Control Center remains.
+- AYARLAR nav now opens a dedicated RIPPERINIO HUD-styled Settings window with:
+  voice, input mode, SFX/FX level, Windows autostart, desktop shortcut,
+  API settings, Phone Center and V6 Control Center shortcuts.
+- Automatic GitHub self-update remains disabled. GitHub is source/history only.
+
+Base: V6.2.1c + V6.2.1d incremental patches.

@@ -1,0 +1,43 @@
+# RIPPERINIO — Windows gerekli paketler
+google-genai
+opencv-python
+pyaudio
+numpy
+psutil
+Pillow
+requests
+# Telefon sunucusunun HTTPS sertifikasini ve AES-GCM telefon paketlerini yonetir.
+cryptography
+
+# ── Windows'a ozel ───────────────────────────────────────────────────────────
+# pywin32   : Outlook COM (takvim/animsatici), win32gui (aktif pencere), font API
+# mss       : hizli ekran yakalama
+# pywinauto : WhatsApp Desktop otomasyonu
+pywin32; sys_platform == "win32"
+mss; sys_platform == "win32"
+pywinauto; sys_platform == "win32"
+# Direct mouse/keyboard UI control
+pyautogui; sys_platform == "win32"
+# Global F8 push-to-talk hook (fallback: HUD-focused Tk binding)
+keyboard; sys_platform == "win32"
+
+# Telefon web sunucusu ve QR
+fastapi
+uvicorn
+websockets
+qrcode
+
+# Windows canlı medya + gerçek ana ses seviyesi
+pycaw; sys_platform == "win32"
+winrt-runtime==3.2.1; sys_platform == "win32"
+winrt-Windows.Foundation==3.2.1; sys_platform == "win32"
+winrt-Windows.Foundation.Collections==3.2.1; sys_platform == "win32"
+winrt-Windows.Media==3.2.1; sys_platform == "win32"
+winrt-Windows.Media.Control==3.2.1; sys_platform == "win32"
+winrt-Windows.Storage.Streams==3.2.1; sys_platform == "win32"
+
+# V5 HUD: native Tk dosya sürükle-bırak
+tkinterdnd2==0.6.2; sys_platform == "win32"
+# V5 akıllı Windows bildirim merkezi (WinRT UserNotificationListener)
+winrt-Windows.UI.Notifications==3.2.1; sys_platform == "win32"
+winrt-Windows.UI.Notifications.Management==3.2.1; sys_platform == "win32"

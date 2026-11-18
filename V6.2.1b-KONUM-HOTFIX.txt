@@ -1,0 +1,26 @@
+RIPPERINIO V6.2.1b - PHONE LIVE + KONUM HOTFIX
+
+Bu paket V6.2.1 tabanidir. GitHub otomatik self-update/bootstrap EKLENMEMISTIR.
+
+DUZELEN:
+- Ana HUD'un sol altindaki RIPPERINIO TELEFON dugmesi artik Android heartbeat'ini takip eder.
+- Telefon gercekten bagliysa dugme yesil "TELEFON BAGLI" olur.
+- Bridge acik ama telefon bagli degilse mavi "BRIDGE HAZIR" gorunur.
+
+EKLENEN:
+- Phone Control Center > GENEL > KONUMU BUL
+- HARITADA AC
+- ZIL CALDIR ayri buton oldu (eski "Telefonu Bul" sadece zil caldiriyordu).
+- Sol kenar Phone Drawer'a KONUMU BUL eklendi.
+- RIP Mobile'a konum izni + get_location komutu eklendi.
+
+ONEMLI - KONUM ICIN TELEFON APK'SI DA GUNCELLENMELI:
+1) PC tarafinda bu paketten BASLAT.bat calistir.
+2) android/RIP-Mobile-V6 klasorunu Android Studio ile ac.
+3) Uygulamayi telefona Run/Install et (V6.2.1b).
+4) Telefonda RIP Mobile > YETKI MERKEZI > KONUM IZNI butonuna bas ve izni ver.
+5) PC'de Phone Control Center > GENEL > KONUMU BUL'a bas.
+6) HARITADA AC butonu son koordinati varsayilan tarayicida Google Maps'te acar.
+
+Konum cevabi sadece eslestirilmis RIP Bridge komutuyla istenir. PC'deki son konum kaydi
+LOCALAPPDATA altindaki persistent_bridge/phone_location.json dosyasinda tutulur.

@@ -1,0 +1,36 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.ripperinio.mobile'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.ripperinio.mobile'
+        minSdk 26
+        targetSdk 35
+        versionCode 622
+        versionName '6.2.1b'
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ''
+            versionNameSuffix ''
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // No third-party runtime dependencies. RIP Mobile uses Android framework APIs only.
+}
